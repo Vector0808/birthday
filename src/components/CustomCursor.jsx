@@ -31,10 +31,10 @@ export default function CustomCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-4 h-4 bg-white rounded-full pointer-events-none z-[10000] mix-blend-difference"
+      className="fixed top-0 left-0 w-2 h-2 bg-white rounded-full pointer-events-none z-[10000] mix-blend-difference"
       animate={{
-        x: mousePosition.x - 8,
-        y: mousePosition.y - 8,
+        x: mousePosition.x - 4,
+        y: mousePosition.y - 4,
         scale: isHovering ? 4 : 1,
         opacity: mousePosition.x === -100 ? 0 : 1
       }}
